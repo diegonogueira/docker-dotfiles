@@ -26,9 +26,14 @@ fi
 ln -sf "$(pwd)/zsh/aliases.zsh" "${HOME}/.oh-my-zsh/custom/aliases.zsh"
 ln -sf "$(pwd)/zsh/my.zsh-theme" "${HOME}/.oh-my-zsh/themes/my.zsh-theme"
 ln -sf "$(pwd)/zsh/.zshrc" "${HOME}/.zshrc"
+
 rm -rf "${HOME}/.vscode-server/extensions"
 mkdir -p "${HOME}/shared/.vscode-server/extensions"
 ln -sf "${HOME}/shared/.vscode-server/extensions" "${HOME}/.vscode-server/extensions"
+
+rm -rf "${HOME}/.vscode-server-insiders/extensions"
+mkdir -p "${HOME}/shared/.vscode-server-insiders/extensions"
+ln -sf "${HOME}/shared/.vscode-server-insiders/extensions" "${HOME}/.vscode-server-insiders/extensions"
 
 ###
 # Set zsh as default shell
